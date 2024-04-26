@@ -1,0 +1,9 @@
+{
+  "name": "sdm-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/sdm-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["sdm"],
+  "// targets": "to see all targets run: nx show project sdm-e2e --web",
+  "targets": {}
+}
