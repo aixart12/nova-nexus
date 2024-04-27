@@ -1,4 +1,5 @@
-import './global.css';
+import { Providers } from './providers';
+import { fonts } from './fonts';
 
 export const metadata = {
   title: 'Welcome to sdm',
@@ -11,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className={fonts.rubik.variable}>
+      <Providers>{children}</Providers>
     </html>
   );
 }
