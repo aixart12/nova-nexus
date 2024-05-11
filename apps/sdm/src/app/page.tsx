@@ -1,6 +1,6 @@
 'use client';
 
-import { Link } from '@chakra-ui/next-js';
+import { SearchInput } from '@nova-nexus/components';
 
 export default function Index() {
   /*
@@ -9,8 +9,8 @@ export default function Index() {
    * Note: The corresponding styles are in the ./index.scss file.
    */
   return (
-    <Link href="/about" color="blue.400" _hover={{ color: 'blue.500' }}>
-      About
-    </Link>
+    <>
+      <SearchInput name="Testing"></SearchInput>;
+    </>
   );
 }
