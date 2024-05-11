@@ -1,6 +1,6 @@
 import { HStack, Text } from '@chakra-ui/react';
 
-import { Navbar } from '@nova-nexus/components/DayPicker/_partials/Navbar';
+import { Navbar } from '@nova-nexus/components';
 
 import { useYearContext } from './YearContext';
 

@@ -1,7 +1,7 @@
 import { Textarea, TextareaProps } from '@chakra-ui/react';
 import { FieldProps, useField } from '@formiz/core';
 
-import { FormGroup, FormGroupProps } from '@nova-nexus/components/FormGroup';
+import { FormGroup, FormGroupProps } from '@nova-nexus/components';
 
 type Value = TextareaProps['value'];
 

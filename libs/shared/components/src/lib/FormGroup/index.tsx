@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { LuAlertCircle } from 'react-icons/lu';
 
-import { Icon } from '@nova-nexus/components/Icons';
+import { Icon } from '@nova-nexus/components';
 
 export type FormGroupProps = Omit<
   FormControlProps,
