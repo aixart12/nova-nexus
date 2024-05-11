@@ -5,12 +5,12 @@ import dayjs, { Dayjs } from 'dayjs';
 import { isMatch } from 'react-day-picker';
 import { useTranslation } from 'react-i18next';
 
-import { DayPicker, DayPickerProps } from '@nova-nexus/components/DayPicker';
+import { DayPicker, DayPickerProps } from '@nova-nexus/components';
 import {
   getAfterDateDisabledDatesConfig,
   getBeforeDateDisabledDatesConfig,
-} from '@nova-nexus/components/FieldDayPicker/utils';
-import { FormGroup, FormGroupProps } from '@nova-nexus/components/FormGroup';
+} from '@nova-nexus/components';
+import { FormGroup, FormGroupProps } from '@nova-nexus/components';
 
 export type FieldDayPickerPossibleFormattedValue =
   | string

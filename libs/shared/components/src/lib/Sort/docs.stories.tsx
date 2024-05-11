@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { LuArrowDown, LuArrowUp } from 'react-icons/lu';
 
-import { Icon } from '@nova-nexus/components/Icons';
+import { Icon } from '@nova-nexus/components';
 
 import { Sort, SortValue } from '.';
 

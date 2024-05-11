@@ -12,7 +12,7 @@ import {
 import { FieldProps, useField } from '@formiz/core';
 import { RiEyeCloseLine, RiEyeLine } from 'react-icons/ri';
 
-import { FormGroup, FormGroupProps } from '@nova-nexus/components/FormGroup';
+import { FormGroup, FormGroupProps } from '@nova-nexus/components';
 
 type Value = InputProps['value'];
 

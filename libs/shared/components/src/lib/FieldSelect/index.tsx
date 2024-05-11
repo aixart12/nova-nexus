@@ -3,8 +3,8 @@ import React, { ReactNode } from 'react';
 import { FieldProps, useField } from '@formiz/core';
 import { GroupBase, MultiValue, SingleValue } from 'react-select';
 
-import { FormGroup, FormGroupProps } from '@nova-nexus/components/FormGroup';
-import { Select, SelectProps } from '@nova-nexus/components/Select';
+import { FormGroup, FormGroupProps } from '@nova-nexus/components';
+import { Select, SelectProps } from '@nova-nexus/components';
 
 type UsualSelectProps =
   | 'isClearable'

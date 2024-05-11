@@ -1,6 +1,6 @@
 import { DayModifiers, ModifiersStyles } from 'react-day-picker';
 
-import { colors } from '@/theme/foundations/colors';
+import { colors } from '@nova-nexus/theme';
 
 export const DEFAULT_MODIFIERS: DayModifiers = {
   weekend: { dayOfWeek: [0, 6] },

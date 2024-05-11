@@ -19,7 +19,6 @@ import { useDayPickerPopperManagement } from '@nova-nexus/components';
 import { Icon } from '@nova-nexus/components';
 
 export type DayPickerNavigationMode = 'DAY' | 'MONTH';
-DayPickerContent;
 export type DayPickerProps = {
   id?: string;
   value?: Date | null;

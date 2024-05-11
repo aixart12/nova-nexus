@@ -16,8 +16,8 @@ import {
   LuChevronsRight,
 } from 'react-icons/lu';
 
-import { Icon } from '@nova-nexus/components/Icons';
-import { useRtl } from '@/hooks/useRtl';
+import { Icon } from '@nova-nexus/components';
+import { useRtl } from '@nova-nexus/hooks';
 
 export const getPaginationInfo = ({
   page = 1,

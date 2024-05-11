@@ -2,8 +2,8 @@ import { ChangeEvent, ChangeEventHandler, useEffect, useState } from 'react';
 
 import dayjs from 'dayjs';
 
-import { DATE_FORMAT } from '@nova-nexus/components/DayPicker/constants';
-import { parseInputToDate } from '@nova-nexus/components/DayPicker/parseInputToDate';
+import { DATE_FORMAT } from '@nova-nexus/components';
+import { parseInputToDate } from '@nova-nexus/components';
 
 type UseDayPickerInputManagement = {
   inputValue: string;

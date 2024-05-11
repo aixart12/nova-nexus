@@ -18,8 +18,8 @@ import {
 } from '@chakra-ui/react';
 import { LuChevronDown } from 'react-icons/lu';
 
-import { Icon } from '@nova-nexus/components/Icons';
-import { useIsHydrated } from '@/hooks/useIsHydrated';
+import { Icon } from '@nova-nexus/components';
+import { useIsHydrated } from '@nova-nexus/hooks';
 
 type NavContextValue = {
   active: ReactNode;

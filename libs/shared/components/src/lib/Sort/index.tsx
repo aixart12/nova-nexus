@@ -15,7 +15,7 @@ import {
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 
-import { IconSortAsc, IconSortDesc } from '@nova-nexus/components/Icons';
+import { IconSortAsc, IconSortDesc } from '@nova-nexus/components';
 
 type OptionProps = {
   value: string;

@@ -2,6 +2,13 @@
 
 import './externals-css';
 export * from './lib/theme';
+export * from './components';
+export * from './foundations';
+export * from './foundations/colors';
+
+export * from './semantic-tokens';
+export * from './styles';
+export * from './config';
 
 export { theme as default } from './theme';
 export { COLOR_MODE_STORAGE_KEY } from './config';

@@ -26,9 +26,17 @@
       "@nova-nexus/theme/server": ["libs/shared/theme/src/server.ts"],
       "@nova-nexus/types": ["libs/types/src/index.ts"],
       "@nova-nexus/types/utilities": ["libs/types/src/lib/utilities.d.ts"],
-      "@nova-nexus/types/i18next": ["libs/types/src/lib/i18next.d.ts"],
-
-    }
+      "@nova-nexus/types/i18next": ["libs/types/src/lib/i18next.d.ts"]
+    },
+    "types": [
+      "node",
+      "@nx/react/typings/cssmodule.d.ts",
+      "@nx/react/typings/image.d.ts",
+      "next",
+      "@nx/next/typings/image.d.ts",
+      "@nova-nexus/types/utilities",
+      "@nova-nexus/types/i18next"
+    ]
   },
   "exclude": ["node_modules", "tmp"]
 }

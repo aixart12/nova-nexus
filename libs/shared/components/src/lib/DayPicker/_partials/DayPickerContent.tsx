@@ -17,11 +17,11 @@ import {
   DEFAULT_MODIFIERS,
   DEFAULT_MODIFIERS_STYLES,
 } from '@nova-nexus/components';
-import { useDayPickerCalendarFocusController } from '@nova-nexus/components/DayPicker/hooks/useDayPickerCalendarFocusController';
-import { UseDayPickerMonthNavigationValue } from '@nova-nexus/components/DayPicker/hooks/useDayPickerMonthNavigation';
-import { UseDayPickerPopperManagementValue } from '@nova-nexus/components/DayPicker/hooks/useDayPickerPopperManagement';
-import { matcherToArray } from '@nova-nexus/components/DayPicker/matcherToArray';
-import { MonthPicker } from '@nova-nexus/components/MonthPicker';
+import { useDayPickerCalendarFocusController } from '@nova-nexus/components';
+import { UseDayPickerMonthNavigationValue } from '@nova-nexus/components';
+import { UseDayPickerPopperManagementValue } from '@nova-nexus/components';
+import { matcherToArray } from '@nova-nexus/components';
+import { MonthPicker } from '@nova-nexus/components';
 
 type DayPickerContentProps = {
   isCalendarFocused: boolean;
@@ -156,7 +156,7 @@ export const DayPickerContent = forwardRef<
                 modifiers={modifiers}
                 modifiersStyles={modifiersStyles}
                 {...todayButtonProps}
-                locale={fr}
+                // locale={fr} // Dhruv need to fix this
                 required={required}
               />
             ) : (
