@@ -1,5 +1,5 @@
-import { Providers } from './providers';
-import { fonts } from './fonts';
+import { Document } from './Document';
+import { NextLoader } from './NextLoader';
 
 export const metadata = {
   title: 'Welcome to sdm',
@@ -12,8 +12,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={fonts.rubik.variable}>
-      <Providers>{children}</Providers>
-    </html>
+    <Document>
+      <NextLoader />
+      {children}
+    </Document>
   );
 }

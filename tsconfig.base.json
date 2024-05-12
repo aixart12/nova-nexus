@@ -17,16 +17,20 @@
     "paths": {
       "@nova-nexus/components": ["libs/shared/components/src/index.ts"],
       "@nova-nexus/components/server": ["libs/shared/components/src/server.ts"],
+      "@nova-nexus/features": ["libs/features/src/index.ts"],
+      "@nova-nexus/features/server": ["libs/features/src/server.ts"],
       "@nova-nexus/hooks": ["libs/shared/hooks/src/index.ts"],
       "@nova-nexus/library": ["libs/shared/library/src/index.ts"],
+      "@nova-nexus/library/i18n": ["libs/shared/library/src/lib/i18n/client.ts"],
       "@nova-nexus/library/server": ["libs/shared/library/src/server.ts"],
       "@nova-nexus/locales": ["libs/shared/locales/src/index.ts"],
       "@nova-nexus/locales/server": ["libs/shared/locales/src/server.ts"],
       "@nova-nexus/theme": ["libs/shared/theme/src/index.ts"],
       "@nova-nexus/theme/server": ["libs/shared/theme/src/server.ts"],
       "@nova-nexus/types": ["libs/types/src/index.ts"],
-      "@nova-nexus/types/utilities": ["libs/types/src/lib/utilities.d.ts"],
-      "@nova-nexus/types/i18next": ["libs/types/src/lib/i18next.d.ts"]
+      "@nova-nexus/types/i18next": ["libs/types/src/lib/i18next.d.ts"],
+      "@nova-nexus/types/utilities": ["libs/types/src/lib/utilities.d.ts"]
+      
     },
     "types": [
       "node",

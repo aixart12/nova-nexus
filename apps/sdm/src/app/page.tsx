@@ -1,6 +1,7 @@
 'use client';
 
-import { SearchInput } from '@nova-nexus/components';
+import { APP_PATH } from '@nova-nexus/features';
+import { redirect } from 'next/navigation';
 
 export default function Index() {
   /*
@@ -8,9 +9,5 @@ export default function Index() {
    *
    * Note: The corresponding styles are in the ./index.scss file.
    */
-  return (
-    <>
-      <SearchInput name="Testing"></SearchInput>;
-    </>
-  );
+  redirect(APP_PATH || '/');
 }
