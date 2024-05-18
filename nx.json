@@ -49,7 +49,8 @@
       "plugin": "@nx/jest/plugin",
       "options": {
         "targetName": "test"
-      }
+      },
+      "exclude": ["apps/backend-e2e/**/*"]
     },
     {
       "plugin": "@nx/storybook/plugin",
@@ -58,6 +59,14 @@
         "buildStorybookTargetName": "build-storybook",
         "testStorybookTargetName": "test-storybook",
         "staticStorybookTargetName": "static-storybook"
+      }
+    },
+    {
+      "plugin": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
       }
     }
   ],
