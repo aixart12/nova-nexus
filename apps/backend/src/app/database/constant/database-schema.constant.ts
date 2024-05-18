@@ -1,1 +1,3 @@
-export const models = [];
+import { CompanySchema } from '../models';
+
+export const models = [CompanySchema];

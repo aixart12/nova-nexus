@@ -12,6 +12,7 @@ import {
 import { DATABASE_NAME_CONSTRAINTS } from '../constant/database-constraints.constant';
 import { TextLengthColumn } from '../decorators';
 import { POSTGRES_CURRENT_TIMESTAMP } from '../constant/database-time.constants';
+import { TCompany } from '@nova-nexus/common-models';
 
 @Table({
   tableName: DATABASE_NAME_CONSTRAINTS.COMPANY_TABLE,
@@ -20,19 +21,19 @@ import { POSTGRES_CURRENT_TIMESTAMP } from '../constant/database-time.constants'
   timestamps: true,
   paranoid: true,
 })
-export class Company extends Model<Company> {
+export class CompanySchema extends Model<TCompany> {
   // Add your company model here
   @PrimaryKey
   @AutoIncrement
   @Column
   id: number;
 
-  @TextLengthColumn()
   @Unique
+  @TextLengthColumn()
   email: string;
 
-  @TextLengthColumn()
   @Unique
+  @TextLengthColumn()
   website: string;
 
   @TextLengthColumn()

@@ -29,6 +29,7 @@ export class DatabaseModule {
               dialectModule: pg,
               models: models,
               logging: console.log,
+              autoLoadModels: true,
             };
           },
           inject: [ConfigService],

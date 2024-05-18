@@ -31,7 +31,7 @@ export abstract class BaseService<T extends Model, K> {
     options?: CreateOptions<T['_attributes']>
   ) {
     return this.repository
-      .create(entity as TODO, { transaction, ...options })
+      .create(entity as any, { transaction, ...options })
       .then(this.plainEntityGetter);
   }
 
@@ -63,7 +63,7 @@ export abstract class BaseService<T extends Model, K> {
         }
         // INFO: Create the Field
         return this.repository
-          .create(entity as TODO, { transaction })
+          .create(entity as any, { transaction })
           .then(this.plainEntityGetter);
       });
   }
@@ -74,7 +74,7 @@ export abstract class BaseService<T extends Model, K> {
     bulkCreateOptions?: BulkCreateOptions<T>
   ) {
     return this.repository
-      .bulkCreate(entities as TODO, { transaction, ...bulkCreateOptions })
+      .bulkCreate(entities as any, { transaction, ...bulkCreateOptions })
       .then(this.plainEntitiesGetter);
   }
 
@@ -122,7 +122,7 @@ export abstract class BaseService<T extends Model, K> {
   }
   public async update(entity: Partial<K>, transaction?: Transaction) {
     return this.repository
-      .findByPk((entity as TODO).id, {
+      .findByPk((entity as any).id, {
         rejectOnEmpty: this.createNotFoundError(),
         transaction,
       })
@@ -135,7 +135,7 @@ export abstract class BaseService<T extends Model, K> {
     entitiesToFilterFrom: WhereOptions,
     transaction?: Transaction
   ) {
-    return this.repository.update(entity as TODO, {
+    return this.repository.update(entity as any, {
       where: entitiesToFilterFrom,
       transaction,
       returning: true,
@@ -147,7 +147,7 @@ export abstract class BaseService<T extends Model, K> {
     upsertOptions?: UpsertOptions<T>
   ) {
     return this.repository
-      .upsert(entity as TODO, {
+      .upsert(entity as any, {
         ...upsertOptions,
         returning: true,
         transaction,
@@ -269,7 +269,7 @@ export abstract class BaseService<T extends Model, K> {
 
         const toBeDeleted = _.differenceBy(
           allEntities,
-          entities as TODO,
+          entities as any,
           (entity: { [x: string]: number }) => entity[accessorProperty]
         );
 

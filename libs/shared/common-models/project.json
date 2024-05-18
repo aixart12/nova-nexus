@@ -1,0 +1,19 @@
+{
+  "name": "common-models",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/common-models/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/shared/common-models",
+        "main": "libs/shared/common-models/src/index.ts",
+        "tsConfig": "libs/shared/common-models/tsconfig.lib.json",
+        "assets": ["libs/shared/common-models/*.md"]
+      }
+    }
+  }
+}

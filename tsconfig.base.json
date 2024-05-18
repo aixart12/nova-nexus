@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nova-nexus/common-models": ["libs/shared/common-models/src/index.ts"],
       "@nova-nexus/components": ["libs/shared/components/src/index.ts"],
       "@nova-nexus/components/server": ["libs/shared/components/src/server.ts"],
       "@nova-nexus/features": ["libs/features/src/index.ts"],
