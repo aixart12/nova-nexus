@@ -31,9 +31,6 @@
       "@nova-nexus/types": ["libs/types/src/index.ts"],
       "@nova-nexus/types/i18next": ["libs/types/src/lib/i18next.d.ts"],
       "@nova-nexus/types/utilities": ["libs/types/src/lib/utilities.d.ts"]
-      
-      "@nova-nexus/types/i18next": ["libs/types/src/lib/i18next.d.ts"],
-      "@nova-nexus/types/utilities": ["libs/types/src/lib/utilities.d.ts"]
     },
     "types": [
       "node",

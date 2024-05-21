@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "postgres",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "work-instruction",
+    "host": "postgres",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "CS04aDSA",
+    "database": "cg-database",
+    "host": "postgres",
+    "dialect": "postgres"
+  }
+}

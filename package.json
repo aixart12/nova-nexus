@@ -2,7 +2,10 @@
   "name": "@nova-nexus/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "db:migrate": "npx sequelize-cli db:migrate --env=development",
+    "db:migrate:undo": "npx sequelize-cli db:migrate:undo --env=development"
+  },
   "private": true,
   "dependencies": {
     "@chakra-ui/next-js": "^2.2.0",
